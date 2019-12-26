@@ -1,0 +1,6 @@
+_extends: .github
+repository:
+  name: brand
+  description: branding primitives for the travi.org family of sites
+  homepage: 'https://npm.im/@travi/brand'
+  private: false
