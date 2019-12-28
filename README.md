@@ -23,7 +23,7 @@ $ npm install @travi/brand --save-prod
 
 #### Square
 
-![
+![Square Travi.org Logo](img/square-logo.svg)
 
 ## Contributing
 
