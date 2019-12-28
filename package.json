@@ -9,6 +9,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": ["dist/"],
   "repository": "travi-org/brand",
   "bugs": "https://github.com/travi-org/brand/issues",
   "homepage": "https://npm.im/@travi/brand",
@@ -22,6 +23,7 @@
     "lint:travis": "travis-lint .travis.yml",
     "lint:peer": "npm ls >/dev/null",
     "prebuild": "run-s clean",
+    "prepack": "run-s build",
     "build": "npm-run-all --print-label --parallel build:*",
     "build:svg": "svgo -f img -o dist/img --disable removeViewBox"
   },
