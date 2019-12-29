@@ -1,0 +1,13 @@
+{
+  "colors": {
+    "brand-pallette": {
+      "dark-red": {"red": 200, "green": 0, "blue": 0}
+    }
+  },
+  "typefaces": {
+    "logo": {
+      "name": "Permanent Marker",
+      "fallback": "Franklin Gothic Demi Cond, sans-serif"
+    }
+  }
+}

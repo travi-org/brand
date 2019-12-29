@@ -9,7 +9,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "files": ["dist/"],
+  "main": "rules.json",
+  "files": ["rules.json", "dist/"],
   "repository": "travi-org/brand",
   "bugs": "https://github.com/travi-org/brand/issues",
   "homepage": "https://npm.im/@travi/brand",
