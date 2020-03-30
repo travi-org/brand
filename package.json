@@ -35,7 +35,7 @@
     "husky": "^4.0.2",
     "lockfile-lint": "^4.0.0",
     "npm-run-all": "^4.1.5",
-    "remark-cli": "^7.0.1",
+    "remark-cli": "^8.0.0",
     "remark-preset-lint-travi": "^1.3.0",
     "svgo": "^1.3.2",
     "travis-lint": "^1.0.0"
