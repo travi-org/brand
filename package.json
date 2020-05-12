@@ -4,13 +4,13 @@
   "license": "MIT",
   "version": "0.0.0-semantically-released",
   "files": [
-    "index.js"
+    "rules.json",
+    "dist/"
   ],
   "publishConfig": {
     "access": "public"
   },
   "main": "rules.json",
-  "files": ["rules.json", "dist/"],
   "repository": "travi-org/brand",
   "bugs": "https://github.com/travi-org/brand/issues",
   "homepage": "https://npm.im/@travi/brand",
