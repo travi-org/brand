@@ -21,7 +21,6 @@
     "lint:lockfile": "lockfile-lint --path package-lock.json --type npm --validate-https --allowed-hosts npm",
     "lint:md": "remark . --frail",
     "lint:sensitive": "ban",
-    "lint:travis": "travis-lint .travis.yml",
     "lint:peer": "npm ls >/dev/null",
     "prebuild": "run-s clean",
     "prepack": "run-s build",
@@ -38,7 +37,7 @@
     "remark-cli": "9.0.0",
     "remark-preset-lint-travi": "1.3.11",
     "rimraf": "3.0.2",
-    "svgo": "1.3.2",
-    "travis-lint": "1.0.0"
-  }
+    "svgo": "1.3.2"
+  },
+  "dependencies": {}
 }
