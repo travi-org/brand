@@ -37,7 +37,7 @@
     "remark-cli": "10.0.0",
     "remark-preset-lint-travi": "2.0.3",
     "rimraf": "3.0.2",
-    "svgo": "2.4.0"
+    "svgo": "2.5.0"
   },
   "dependencies": {}
 }
