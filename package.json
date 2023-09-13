@@ -3,15 +3,11 @@
   "description": "branding primitives for the travi.org family of sites",
   "license": "MIT",
   "version": "0.0.0-semantically-released",
-  "files": [
-    "rules.json",
-    "dist/"
-  ],
-  "main": "rules.json",
+  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
   "repository": "travi-org/brand",
   "bugs": "https://github.com/travi-org/brand/issues",
   "homepage": "https://npm.im/@travi/brand",
-  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
+  "main": "rules.json",
   "scripts": {
     "clean": "rimraf lib/",
     "test": "npm-run-all --print-label --parallel lint:*",
@@ -26,6 +22,10 @@
     "prepare": "husky install",
     "lint:publish": "publint --strict"
   },
+  "files": [
+    "rules.json",
+    "dist/"
+  ],
   "publishConfig": {
     "access": "public",
     "provenance": true
@@ -42,6 +42,5 @@
     "remark-preset-lint-travi": "6.0.1",
     "rimraf": "5.0.1",
     "svgo": "3.0.2"
-  },
-  "dependencies": {}
+  }
 }
