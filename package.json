@@ -26,7 +26,8 @@
     "prepack": "run-s build",
     "build": "npm-run-all --print-label --parallel build:*",
     "build:svg": "svgo -f img -o dist/img --disable removeViewBox",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint:publish": "publint --strict"
   },
   "devDependencies": {
     "ban-sensitive-files": "1.10.0",
@@ -35,6 +36,7 @@
     "husky": "8.0.3",
     "lockfile-lint": "4.12.1",
     "npm-run-all2": "6.0.6",
+    "publint": "0.2.2",
     "remark-cli": "11.0.0",
     "remark-preset-lint-travi": "6.0.1",
     "rimraf": "5.0.1",
