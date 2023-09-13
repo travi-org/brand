@@ -25,7 +25,8 @@
     "prebuild": "run-s clean",
     "prepack": "run-s build",
     "build": "npm-run-all --print-label --parallel build:*",
-    "build:svg": "svgo -f img -o dist/img --disable removeViewBox"
+    "build:svg": "svgo -f img -o dist/img --disable removeViewBox",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "ban-sensitive-files": "1.10.0",
