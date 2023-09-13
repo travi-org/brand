@@ -3,9 +3,8 @@ name: Node.js CI
   push:
     branches:
       - master
-      - alpha
       - beta
-      - 'renovate/**'
+      - renovate/**
   pull_request:
     types:
       - opened
@@ -28,20 +27,15 @@ jobs:
       - uses: bahmutov/npm-install@c46e3830503dcb831cf4aee3f26b4e6bce8cc9d2 # v1.8.35
       - run: npm test
   release:
-    needs: verify
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4.0.0
-      - name: Read .nvmrc
-        run: 'echo ::set-output name=NVMRC::$(cat .nvmrc)'
-        id: nvm
-      - name: Setup node
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3.8.1
-        with:
-          node-version: '${{ steps.nvm.outputs.NVMRC }}'
-      - uses: bahmutov/npm-install@c46e3830503dcb831cf4aee3f26b4e6bce8cc9d2 # v1.8.35
-      - name: semantic-release
-        run: npx semantic-release
-        env:
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
-          NPM_TOKEN: '${{ secrets.NPM_PUBLISH_TOKEN }}'
+    needs:
+      - verify
+    permissions:
+      contents: write
+      id-token: write
+      issues: write
+      pull-requests: write
+    uses: form8ion/.github/.github/workflows/release-package.yml@master
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+permissions:
+  contents: read

@@ -5,6 +5,7 @@ branding primitives for the travi.org family of sites
 <!--status-badges start -->
 
 [![Node CI Workflow Status][github-actions-ci-badge]][github-actions-ci-link]
+![SLSA Level 2][slsa-badge]
 
 <!--status-badges end -->
 
@@ -58,7 +59,7 @@ $ npm test
 
 [npm-link]: https://www.npmjs.com/package/@travi/brand
 
-[npm-badge]: https://img.shields.io/npm/v/@travi/brand.svg
+[npm-badge]: https://img.shields.io/npm/v/@travi/brand?logo=npm
 
 [license-link]: LICENSE
 
@@ -74,7 +75,7 @@ $ npm test
 
 [semantic-release-link]: https://github.com/semantic-release/semantic-release
 
-[semantic-release-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-release-badge]: https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release
 
 [PRs-link]: http://makeapullrequest.com
 
@@ -87,3 +88,5 @@ $ npm test
 [github-actions-ci-link]: https://github.com/travi-org/brand/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster
 
 [github-actions-ci-badge]: https://github.com/travi-org/brand/workflows/Node.js%20CI/badge.svg
+
+[slsa-badge]: https://slsa.dev/images/gh-badge-level2.svg

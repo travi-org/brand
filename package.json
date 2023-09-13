@@ -7,9 +7,6 @@
     "rules.json",
     "dist/"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "main": "rules.json",
   "repository": "travi-org/brand",
   "bugs": "https://github.com/travi-org/brand/issues",
@@ -28,6 +25,10 @@
     "build:svg": "svgo -f img -o dist/img --disable removeViewBox",
     "prepare": "husky install",
     "lint:publish": "publint --strict"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   },
   "devDependencies": {
     "ban-sensitive-files": "1.10.0",
