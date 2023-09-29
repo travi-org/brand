@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "ban-sensitive-files": "1.10.0",
-    "commitlint-config-travi": "1.4.35",
+    "commitlint-config-travi": "1.4.36",
     "cz-conventional-changelog": "3.3.0",
     "husky": "8.0.3",
     "lockfile-lint": "4.12.1",
